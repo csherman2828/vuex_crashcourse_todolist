@@ -22,3 +22,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Notes
+
+### Stopped at About 35:00 last time

@@ -38,6 +38,7 @@
       ...mapActions(['addTodoItem']),
       onSubmit(e){
         e.preventDefault();
+        console.log
         this.addTodoItem(this.title);
         this.title = '';
       }
