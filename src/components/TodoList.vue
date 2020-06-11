@@ -22,7 +22,7 @@
   // import other components
 
   // Import Vuex Bits
-  import { mapGetters } from 'vuex';
+  import { mapGetters, mapActions } from 'vuex';
 
 
   // export component info object
@@ -36,9 +36,15 @@
     // component internal data
     data() { return{} },
     // add all functions for events and stuff
-    methods: {},
+    methods: {
+      ...mapActions(['fetchTodoList'])
+    },
     // computed for values mapped by Vuex
-    computed: mapGetters(['getTodoList'])
+    computed: mapGetters(['getTodoList']),
+    // lifecycle method for when the component has been created
+    created() {
+      this.fetchTodoList();
+    }
   }
 </script>
 

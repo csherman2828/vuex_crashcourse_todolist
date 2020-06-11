@@ -1,15 +1,18 @@
 <template>
   <div id="App">
+    <AddTodoForm/>
     <TodoList/>
   </div>
 </template>
 
 <script>
-import TodoList from './components/TodoList.vue'
+import TodoList from './components/TodoList.vue';
+import AddTodoForm from './components/AddTodoForm.vue';
 
 export default {
   name: 'App',
   components: {
+    AddTodoForm,
     TodoList
   }
 }

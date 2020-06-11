@@ -23,7 +23,6 @@
     data() { return{} },
     // add all functions for events and stuff
     methods: {}
-    }
   }
 </script>
 
